@@ -57,14 +57,14 @@ meal-plan-angular-master/
 
 ## Basisdateien_und_ihr_Zweck
 
-```meal-table.component.ts``` - holt und zeigt das Menü an;
-```meal-table.component.html``` - Struktur der Tabelle;
-```meal-table.component.css``` - Tabellenstile;
-```meal.service.ts``` - Dienst für den Empfang von Daten von der API;
-```app.module.ts``` - das Hauptmodul der Anwendung;
-```index.html``` - HTML-Startseite;
-```angular.json``` - Konfiguration des Angular-Projekts;
-```styles.css``` - globale Stile;
+- ```meal-table.component.ts``` - holt und zeigt das Menü an;
+- ```meal-table.component.html``` - Struktur der Tabelle;
+- ```meal-table.component.css``` - Tabellenstile;
+- ```meal.service.ts``` - Dienst für den Empfang von Daten von der API;
+- ```app.module.ts``` - das Hauptmodul der Anwendung;
+- ```index.html``` - HTML-Startseite;
+- ```angular.json``` - Konfiguration des Angular-Projekts;
+- ```styles.css``` - globale Stile;
 
 ## Anwendung_starten
 
