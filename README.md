@@ -7,7 +7,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 3. [Struktur_des_Projekts](#Struktur_des_Projekts)
 4. [Basisdateien_und_ihr_Zweck](#Basisdateien_und_ihr_Zweck)
 5. [Anwendung_starten](#Anwendung_starten)
-
+6. [Projekt-Vorschau](#Projekt-Vorschau)
 
 ## Beschreibung
 
@@ -77,3 +77,5 @@ Standardmäßig wird die Anwendung unter http://localhost:4200/ geöffnet
 
 ```ng serve --port=4300```
 
+## Projekt-Vorschau
+![alt text](<Frame 30.jpg>)
