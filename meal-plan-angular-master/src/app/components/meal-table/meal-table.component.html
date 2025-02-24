@@ -1,0 +1,35 @@
+<div class="container mt-4">
+ 
+  <div *ngIf="isLoading">Laden...</div>
+
+
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+
+  <div class="table-container">
+    <table *ngIf="!isLoading && !errorMessage" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>KW {{ weekNumber }}</th>
+          <th *ngFor="let day of daysOfWeek">{{ day.name }} <br> {{ day.date }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of rows">
+          <td class = "aktion"><strong class="action-text">{{ row?.Name }}</strong></td>
+          <td *ngFor="let day of row?.Days">
+            <div *ngFor="let productObj of day?.ProductIds">
+              <div *ngIf="data?.Products?.[productObj?.ProductId] as product">
+                <strong>{{ product?.Name || 'Unbekanntes Produkt' }}</strong><br>
+                <small class="allergens"  *ngIf="product?.AllergenIds?.length">
+                  {{ getAllergenNames(product) }}
+                </small><br>
+                <strong>{{ product?.Price?.Betrag ? (product.Price.Betrag + ' €') : 'Preis nicht verfügbar' }}</strong>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  /*для того щоб правильно розраховувати padding, margin*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  /*Щоб колір наслідувався у батьків*/
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  /* щоб заховати текст */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  color: #2B2A29;
+  margin: 0;
+}
+
+.bg-img {
+  background-image: url('app/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.table-title {
+  font-size: 3em;
+  color: #07f999;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bg-img {
+    background-image: url('app/assets/images/bg-vertical.jpg');
+    height: 100%;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .table-title {
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 746px) {
+
+  .table-title {
+    font-size: 2em;
+    padding: 10px;
+  }
+}

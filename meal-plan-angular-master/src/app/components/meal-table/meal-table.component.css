@@ -1,0 +1,135 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+.date {
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  margin-top: 2px;
+}
+
+th,
+td {
+  border: 5px solid #ffffff;
+  padding: 7px;
+}
+
+th {
+  background: #e5e5e5;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+td {
+  vertical-align: top;
+
+}
+
+tr {
+  background: #fff;
+}
+
+.aktion {
+  background: #e5e5e5;
+}
+
+
+td strong {
+  color: #000000;
+  font-size: 1.5em;
+}
+
+.allergens {
+  color: #989898;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+td:first-child {
+  font-weight: bold;
+  text-align: left;
+  color: #595959;
+}
+
+th,
+td {
+  min-width: 150px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1800px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+
+  .table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+
+  thead {
+    display: none;
+  }
+
+
+  tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+  }
+
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+  td:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    background: #e5e5e5;
+  }
+
+
+  td:last-child {
+    border-bottom: none;
+  }
+}
+
+
+@media screen and (max-width: 746px) {
+  .table-container {
+    width: 95%;
+  }
+}
